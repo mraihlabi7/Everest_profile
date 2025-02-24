@@ -66,195 +66,168 @@
         </div>
     </header>
 
-    <!-- nav -->
-    <nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
-        <div class="flex flex-wrap justify-between items-center max-w-screen-xl p-4 relative container mx-auto px-1">
-            <button type="button"
-                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-                Default
-            </button>
-    
-            <div id="mega-menu-full"
-                class="hidden md:flex md:w-auto items-center justify-between font-medium">
-                <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                    <li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Home</a></li>
-                    <li>
-                        <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" aria-expanded="false"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Company
-                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="m1 1 4 4 4-4" />
-                            </svg></button>
-                    </li>
-                    <li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a></li>
-                    <li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Resources</a></li>
-                    <li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a></li>
-                </ul>
-            </div>
-    
-            <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-            </a>
-    
-            <!-- زر البرغر -->
-            <button id="burger-menu-btn" type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M1 1h15M1 7h15M1 13h15" />
-                </svg>
-            </button>
-        </div>
-    
-        <!-- القائمة الجانبية (تفتح من اليمين) -->
-        <div id="responsive-menu"
-            class="fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform translate-x-full transition-transform ease-in-out duration-300 md:hidden">
-            <button id="close-menu-btn" class="absolute top-3 left-3 text-gray-700 dark:text-white">
-                ✖
-            </button>
-            <ul class="p-5 space-y-4">
-                <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Home</a></li>
+<!-- nav -->
+<nav class="bg-white border-gray-200 dark:border-gray-600 dark:bg-gray-900">
+    <div class="flex flex-wrap justify-between items-center max-w-screen-xl p-4 relative container mx-auto px-1">
+        <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Default</button>
+        
+        <!-- قائمة الشاشات الكبيرة -->
+        <div id="mega-menu-full" class="hidden md:flex md:w-auto items-center justify-between font-medium">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Home</a></li>
                 <li>
-                    <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown" aria-expanded="false"
+                    <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown-larg" aria-expanded="false"
                         class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm md:w-auto hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Company
                         <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" d="m1 1 4 4 4-4" />
                         </svg></button>
-                </li>                <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Marketplace</a></li>
-                <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Resources</a></li>
-                <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Contact</a></li>
+                </li>
+                <li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Marketplace</a></li>
+                <li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Resources</a></li>
+                <li><a href="#" class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a></li>
             </ul>
         </div>
 
-        <div id="mega-menu-full-dropdown"
-        class=" hidden mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
-        <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+        <a href="https://flowbite.com" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+        </a>
+        
+        <button id="burger-menu-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" /></svg>
+        </button>
+    </div>
+    
+    <!-- القائمة الجانبية (تفتح من اليمين) -->
+    <div id="responsive-menu" class="fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform translate-x-full transition-transform ease-in-out duration-300 md:hidden">
+        <button id="close-menu-btn" class="absolute top-3 left-3 text-gray-700 dark:text-white">✖</button>
+        <ul class="p-5 space-y-4">
+            <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Home</a></li>
+            <li>
+                <button id="company-menu-btn-mobile" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm dark:text-white">Company <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" /></svg></button>
+            </li>
+            <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Marketplace</a></li>
+            <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Resources</a></li>
+            <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- قائمة Company -->
+    <div id="mega-menu-full-dropdown" class="hidden fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform transition-transform ease-in-out duration-300 md:hidden">
+        <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2">
             <ul>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Online Stores</div>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                            you're already using.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Segmentation</div>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                            you're already using.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Marketing CRM</div>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                            you're already using.</span>
-                    </a>
-                </li>
+                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Online Stores</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
+                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Segmentation</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
+                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Marketing CRM</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
             </ul>
             <ul>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Online Stores</div>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                            you're already using.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Segmentation</div>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                            you're already using.</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <div class="font-semibold">Marketing CRM</div>
-                        <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                            you're already using.</span>
-                    </a>
-                </li>
+                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Online Stores</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
+                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Segmentation</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
+                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Marketing CRM</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
             </ul>
         </div>
+        <button class="absolute top-3 right-3 text-gray-700 dark:text-white">✖</button>
     </div>
-    </nav>
-    
-    <script>
-        const burgerMenuBtn = document.getElementById('burger-menu-btn');
-        const closeMenuBtn = document.getElementById('close-menu-btn');
-        const responsiveMenu = document.getElementById('responsive-menu');
-        const companyMenuBtn = document.getElementById('mega-menu-full-dropdown-button');
-        const megaMenuDropdown = document.getElementById('mega-menu-full-dropdown');
-        const backToMenuBtn = document.createElement('button');
-        const closeSubMenuBtn = document.createElement('button');
-        
-        // إنشاء زر العودة للقائمة الرئيسية
-        backToMenuBtn.textContent = '← Back';
-        backToMenuBtn.classList.add('absolute', 'top-3', 'left-3', 'text-gray-700', 'dark:text-white');
-        backToMenuBtn.style.display = 'none';
-        
-        // إنشاء زر إغلاق القائمة الفرعية
-        closeSubMenuBtn.textContent = '✖';
-        closeSubMenuBtn.classList.add('absolute', 'top-3', 'right-3', 'text-gray-700', 'dark:text-white');
-        closeSubMenuBtn.style.display = 'none';
-        
-        responsiveMenu.appendChild(backToMenuBtn);
-        megaMenuDropdown.appendChild(closeSubMenuBtn);
-        
-        // فتح القائمة الجانبية عند الضغط على زر البرغر
-        burgerMenuBtn.addEventListener('click', (event) => {
-            event.stopPropagation();
-            responsiveMenu.classList.remove('translate-x-full');
-            responsiveMenu.classList.add('translate-x-0');
-        });
-    
-        // إغلاق القائمة الجانبية عند الضغط على زر الإغلاق
-        closeMenuBtn.addEventListener('click', () => {
-            responsiveMenu.classList.remove('translate-x-0');
+    <div id="mega-menu-full-dropdown-larg"
+    class=" hidden mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
+    <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+        <ul>
+            <li>
+                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <div class="font-semibold">Online Stores</div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                        you're already using.</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <div class="font-semibold">Segmentation</div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                        you're already using.</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <div class="font-semibold">Marketing CRM</div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                        you're already using.</span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <div class="font-semibold">Online Stores</div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                        you're already using.</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <div class="font-semibold">Segmentation</div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                        you're already using.</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                    <div class="font-semibold">Marketing CRM</div>
+                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                        you're already using.</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<script>
+    const burgerMenuBtn = document.getElementById('burger-menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const responsiveMenu = document.getElementById('responsive-menu');
+    const megaMenuDropdown = document.getElementById('mega-menu-full-dropdown');
+    const companyMenuBtnMobile = document.getElementById('company-menu-btn-mobile');
+
+    // فتح القائمة الجانبية عند الضغط على زر البرغر
+    burgerMenuBtn.addEventListener('click', () => {
+        responsiveMenu.classList.remove('translate-x-full');
+        responsiveMenu.classList.add('translate-x-0');
+    });
+
+    // إغلاق القائمة الجانبية عند الضغط على زر الإغلاق
+    closeMenuBtn.addEventListener('click', () => {
+        responsiveMenu.classList.remove('translate-x-0');
+        responsiveMenu.classList.add('translate-x-full');
+    });
+
+    // فتح وإغلاق القائمة الفرعية عند الضغط على Company
+    const toggleCompanyMenu = () => {
+        megaMenuDropdown.classList.toggle('hidden');
+    };
+
+    companyMenuBtnMobile.addEventListener('click', (event) => {
+        event.stopPropagation();
+        toggleCompanyMenu();
+    });
+
+    // إغلاق القائمة عند النقر خارجها
+    document.addEventListener('click', (event) => {
+        if (!responsiveMenu.contains(event.target) && !burgerMenuBtn.contains(event.target)) {
             responsiveMenu.classList.add('translate-x-full');
-        });
-    
-        // إغلاق القائمة عند النقر خارجها
-        document.addEventListener('click', (event) => {
-            const isClickInsideMenu = responsiveMenu.contains(event.target);
-            const isClickOnButton = burgerMenuBtn.contains(event.target);
-            if (!isClickInsideMenu && !isClickOnButton) {
-                responsiveMenu.classList.remove('translate-x-0');
-                responsiveMenu.classList.add('translate-x-full');
-            }
-        });
-    
-        // فتح القائمة الفرعية عند الضغط على Company في وضع الجوال
-        companyMenuBtn.addEventListener('click', (event) => {
-            event.stopPropagation();
-            megaMenuDropdown.classList.remove('hidden');
-            megaMenuDropdown.classList.add('translate-x-0', 'fixed', 'top-0', 'right-0', 'h-full', 'w-64', 'bg-white', 'dark:bg-gray-900', 'shadow-lg', 'transition-transform', 'ease-in-out', 'duration-300');
-            backToMenuBtn.style.display = 'block';
-            closeSubMenuBtn.style.display = 'block';
-        });
-    
-        // زر العودة إلى القائمة الرئيسية
-        backToMenuBtn.addEventListener('click', () => {
+            responsiveMenu.classList.remove('translate-x-0');
             megaMenuDropdown.classList.add('hidden');
-            backToMenuBtn.style.display = 'none';
-            closeSubMenuBtn.style.display = 'none';
-        });
-    
-        // زر إغلاق القائمة الفرعية
-        closeSubMenuBtn.addEventListener('click', () => {
-            megaMenuDropdown.classList.add('hidden');
-            backToMenuBtn.style.display = 'none';
-            closeSubMenuBtn.style.display = 'none';
-        });
-    </script>
-    
-    
-    
+        }
+    });
+
+    // إغلاق القائمة الفرعية
+    megaMenuDropdown.querySelector('button').addEventListener('click', () => {
+        megaMenuDropdown.classList.add('hidden');
+    });
+</script>
+
 
     <div class="container mx-auto">
         <div class="flex justify-center items-center h-screen bg-amber-100">
