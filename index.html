@@ -20,225 +20,301 @@
 </head>
 
 <body>
-    <!-- الهيدر -->
-    <header class="bg-blue-900 text-white py-3">
-        <div class="container mx-auto flex items-center justify-between px-1">
+    <div class="fixed w-full z-[1]">
+        <!-- الهيدر -->
+        <header class="bg-blue-900 text-white py-3">
+            <div class="container mx-auto flex items-center justify-between px-1">
 
-            <!-- البحث واللغة -->
-            <div class="flex items-center gap-4">
-                <button
-                    class="px-2 py-1 rounded-full border border-gray-900 hover:bg-white hover:text-blue-900 transition">
-                    <i class="fas fa-search"></i>
-                </button>
-                <!-- أيقونات السوشيال ميديا -->
-                <div class="flex gap-3">
-                    <a href="#" class="hover:text-yellow-900 text-gray-900"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="hover:text-yellow-900 text-gray-900"><i
-                            class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="#" class="hover:text-yellow-900 text-gray-900"><i
-                            class="fa-brands fa-square-youtube"></i></a>
-                </div>
-            </div>
-
-            <!-- رسالة -->
-            <div class="md:mr-[-80px]">
-                <span class="text-lg">نسعى دائماً لابتسامة عملائنا</span>
-            </div>
-
-            <!-- معلومات التواصل -->
-            <div class="flex items-center gap-6 text-yellow-900">
-                <div class="flex gap-2">
-                    <div class="flex-col items-end hidden lg:flex">
-                        <span class="text-[13px] text-white">info@sanaayaalmaarof.org</span>
-                        <span class=" text-gray-900 text-[10px]">البريد الرسمي للموسسة</span>
-                    </div>
-                    <i class="hover:text-gray-900 mt-2 fa-solid fa-at"></i>
-                </div>
-                <div class="flex gap-2">
-                    <div class="flex-col hidden lg:flex items-end">
-                        <span class="text-[13px] text-white">0123 567 8901</span>
-                        <span class=" text-gray-900 text-[10px]">للتواصل معنا</span>
-                    </div>
-                    <i class="hover:text-gray-900 mt-2 fa-solid fa-phone"></i>
-                </div>
-            </div>
-
-        </div>
-    </header>
-
-<!-- nav -->
-<nav class="bg-white">
-    <div class="flex  justify-between items-center p-2 relative container mx-auto px-1">
-        
-        <a class="mainBtn" href="#">
-            <span class="top-key"></span>
-            <span class="text">تواصل واتساب</span>
-            <span class="bottom-key-1"></span>
-            <span class="bottom-key-2"></span>
-          </a>
-
-        <!-- قائمة الشاشات الكبيرة -->
-        <div id="mega-menu-full" class="hidden md:flex md:w-auto font-medium">
-            <ul class="flex flex-row-reverse rounded-lg">
-                <li><a href="#" class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent  hover:text-yellow-500">الرئسية</a></li>
-                <li>
-                    <button id="mega-menu-full-dropdown-button" data-collapse-toggle="mega-menu-full-dropdown-larg" aria-expanded="false"
-                        class="Nav-link mt-0.5 flex hover:text-yellow-500 items-center justify-between text-blue-900">
-                        <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" d="m1 1 4 4 4-4" />
-                        </svg>
-                        Company
+                <!-- البحث واللغة -->
+                <div class="flex items-center gap-4">
+                    <button
+                        class="px-2 py-1 rounded-full border border-gray-900 hover:bg-white hover:text-blue-900 transition">
+                        <i class="fas fa-search"></i>
                     </button>
-                </li>
-                <li><a href="#" class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">المشاريع</a></li>
-                <li><a href="#" class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">باقة الخدمات</a></li>
-                <li><a href="#" class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">الاخبار</a></li>
-                <li><a href="#" class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">الشراكات</a></li>
-                <li><a href="#" class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">العروض</a></li>
-                <li><a href="#" class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">المدونات</a></li>
+                    <!-- أيقونات السوشيال ميديا -->
+                    <div class="flex gap-3">
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+                </div>
 
-            </ul>
+                <!-- رسالة -->
+                <div class="lg:mr-[-80px]">
+                    <span class="md:text-[22px] text-[14px]">نسعى دائماً لابتسامة عملائنا</span>
+                </div>
+
+                <!-- معلومات التواصل -->
+                <div class="flex items-center gap-6 text-yellow-900">
+                    <div class="flex gap-2">
+                        <div class="flex-col items-end hidden lg:flex">
+                            <span class="text-[13px] text-white">info@sanaayaalmaarof.org</span>
+                            <span class=" text-gray-900 text-[10px]">البريد الرسمي للموسسة</span>
+                        </div>
+                        <i class="hover:text-gray-900 mt-2 fa-solid fa-at"></i>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="flex-col hidden lg:flex items-end">
+                            <span class="text-[13px] text-white">0123 567 8901</span>
+                            <span class=" text-gray-900 text-[10px]">للتواصل معنا</span>
+                        </div>
+                        <i class="hover:text-gray-900 mt-2 fa-solid fa-phone"></i>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- nav -->
+        <nav class="bg-white">
+            <div class="flex  justify-between items-center p-2 relative container mx-auto px-1">
+
+                <a class="mainBtn" href="#">
+                    <span class="top-key"></span>
+                    <span class="text">تواصل واتساب</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </a>
+
+                <!-- قائمة الشاشات الكبيرة -->
+                <div id="mega-menu-full" class="hidden md:flex md:w-auto font-medium">
+                    <ul class="flex flex-row-reverse rounded-lg">
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent  hover:text-yellow-500">الرئسية</a>
+                        </li>
+                        <li>
+                            <button id="mega-menu-full-dropdown-button"
+                                data-collapse-toggle="mega-menu-full-dropdown-larg" aria-expanded="false"
+                                class="Nav-link mt-0.5 flex hover:text-yellow-500 items-center justify-between text-blue-900">
+                                <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                                خدماتنا
+                            </button>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">المشاريع</a>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">باقة
+                                الخدمات</a></li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">الاخبار</a>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">الشراكات</a>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">العروض</a>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">المدونات</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <a href="https://flowbite.com" class="Nav-logo ms-[-40px] md:ms-0">
+                    <img src="imgs/mainImg/mainLogo.png" class="h-full w-full" alt="Flowbite Logo" />
+                </a>
+
+                <button id="burger-menu-btn" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- القائمة الجانبية (تفتح من اليمين) -->
+            <div id="responsive-menu"
+                class="fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform translate-x-full transition-transform ease-in-out duration-300 md:hidden">
+                <button id="close-menu-btn" class="absolute top-3 left-3 text-gray-700 dark:text-white">✖</button>
+                <ul class="p-5 space-y-4">
+                    <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Home</a></li>
+                    <li>
+                        <button id="company-menu-btn-mobile"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm dark:text-white">Company
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                    </li>
+                    <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Marketplace</a></li>
+                    <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Resources</a></li>
+                    <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- قائمة Company -->
+            <div id="mega-menu-full-dropdown"
+                class="hidden fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform transition-transform ease-in-out duration-300 md:hidden">
+                <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2">
+                    <ul>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Online Stores</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Segmentation</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Marketing CRM</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Online Stores</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Segmentation</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Marketing CRM</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <button class="absolute top-3 right-3 text-gray-700 dark:text-white">✖</button>
+            </div>
+            <div id="mega-menu-full-dropdown-larg" class=" hidden bg-blue-900 mt-1 shadow-xs">
+                <ul class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 lg:grid-cols-3 md:px-6"
+                    style="    direction: rtl;">
+                    <li>
+                        <a href="#" class="block transition-all hover:bg-yellow-900 p-3 rounded-lg text-right">
+                            <div class="font-semibold">Online Stores</div>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                you're already using.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block transition-all hover:bg-yellow-900 p-3 rounded-lg text-right">
+                            <div class="font-semibold">Online Stores</div>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                you're already using.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block transition-all hover:bg-yellow-900 p-3 rounded-lg text-right">
+                            <div class="font-semibold">Online Stores</div>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                you're already using.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block transition-all hover:bg-yellow-900 p-3 rounded-lg text-right">
+                            <div class="font-semibold">Online Stores</div>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                you're already using.</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+
+
+    <!-- diviver -->
+    <div class="h-[113.5px]"></div>
+
+    <!-- s hero -->
+    <section
+        class="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+        <div class="container mx-auto px-4 text-center py-24 lg:py-56">
+            <h1 class="font-medium mb-4 text-[24px] text-white"> تقدم شركة افرست خدمات متنوعة في مجال الإنتاج الإعلامي
+                والاعلاني والتسويق الرقمي <span class="font-bold text-yellow-900">بمختلف أنواعها</span> </h1>
+            <div class="mt-[40px]">
+                <a class="mainBtn" href="#">
+                    <span class="top-key"></span>
+                    <span class="text">تواصل واتساب</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- e hero -->
+
+    <!-- s slider -->
+    <!-- الكاروسيل -->
+    <div id="carouselExample" class="relative" data-carousel="static">
+        <!-- المؤشرات (Indicators) -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true"
+                aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="false"
+                aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="false"
+                aria-label="Slide 3" data-carousel-slide-to="2"></button>
         </div>
 
-        <a href="https://flowbite.com" class="Nav-logo">
-            <img src="imgs/mainImg/mainLogo.png" class="h-full w-full" alt="Flowbite Logo" />
-        </a>
-        
-        <button id="burger-menu-btn" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" /></svg>
+        <!-- غلاف الكاروسيل -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- الشريحة الأولى -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="image1.jpg" class="absolute block w-full h-full object-cover" alt="Slide 1">
+            </div>
+            <!-- الشريحة الثانية -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="image2.jpg" class="absolute block w-full h-full object-cover" alt="Slide 2">
+            </div>
+            <!-- الشريحة الثالثة -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="image3.jpg" class="absolute block w-full h-full object-cover" alt="Slide 3">
+            </div>
+        </div>
+
+        <!-- أزرار التنقل -->
+        <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
+                <svg class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                <span class="sr-only">السابق</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60">
+                <svg class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                <span class="sr-only">التالي</span>
+            </span>
         </button>
     </div>
+    <!-- e slider -->
+
     
-    <!-- القائمة الجانبية (تفتح من اليمين) -->
-    <div id="responsive-menu" class="fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform translate-x-full transition-transform ease-in-out duration-300 md:hidden">
-        <button id="close-menu-btn" class="absolute top-3 left-3 text-gray-700 dark:text-white">✖</button>
-        <ul class="p-5 space-y-4">
-            <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Home</a></li>
-            <li>
-                <button id="company-menu-btn-mobile" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm dark:text-white">Company <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" /></svg></button>
-            </li>
-            <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Marketplace</a></li>
-            <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Resources</a></li>
-            <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- قائمة Company -->
-    <div id="mega-menu-full-dropdown" class="hidden fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform transition-transform ease-in-out duration-300 md:hidden">
-        <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2">
-            <ul>
-                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Online Stores</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
-                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Segmentation</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
-                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Marketing CRM</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
-            </ul>
-            <ul>
-                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Online Stores</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
-                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Segmentation</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
-                <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"><div class="font-semibold">Marketing CRM</div><span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that you're already using.</span></a></li>
-            </ul>
-        </div>
-        <button class="absolute top-3 right-3 text-gray-700 dark:text-white">✖</button>
-    </div>
-    <div id="mega-menu-full-dropdown-larg"
-    class=" hidden mt-1 border-gray-200 shadow-xs bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
-    <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
-        <ul>
-            <li>
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="font-semibold">Online Stores</div>
-                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                        you're already using.</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="font-semibold">Segmentation</div>
-                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                        you're already using.</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="font-semibold">Marketing CRM</div>
-                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                        you're already using.</span>
-                </a>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="font-semibold">Online Stores</div>
-                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                        you're already using.</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="font-semibold">Segmentation</div>
-                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                        you're already using.</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                    <div class="font-semibold">Marketing CRM</div>
-                    <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
-                        you're already using.</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-</div>
-</nav>
-
-<script>
-    const burgerMenuBtn = document.getElementById('burger-menu-btn');
-    const closeMenuBtn = document.getElementById('close-menu-btn');
-    const responsiveMenu = document.getElementById('responsive-menu');
-    const megaMenuDropdown = document.getElementById('mega-menu-full-dropdown');
-    const companyMenuBtnMobile = document.getElementById('company-menu-btn-mobile');
-
-    // فتح القائمة الجانبية عند الضغط على زر البرغر
-    burgerMenuBtn.addEventListener('click', () => {
-        responsiveMenu.classList.remove('translate-x-full');
-        responsiveMenu.classList.add('translate-x-0');
-    });
-
-    // إغلاق القائمة الجانبية عند الضغط على زر الإغلاق
-    closeMenuBtn.addEventListener('click', () => {
-        responsiveMenu.classList.remove('translate-x-0');
-        responsiveMenu.classList.add('translate-x-full');
-    });
-
-    // فتح وإغلاق القائمة الفرعية عند الضغط على Company
-    const toggleCompanyMenu = () => {
-        megaMenuDropdown.classList.toggle('hidden');
-    };
-
-    companyMenuBtnMobile.addEventListener('click', (event) => {
-        event.stopPropagation();
-        toggleCompanyMenu();
-    });
-
-    // إغلاق القائمة عند النقر خارجها
-    document.addEventListener('click', (event) => {
-        if (!responsiveMenu.contains(event.target) && !burgerMenuBtn.contains(event.target)) {
-            responsiveMenu.classList.add('translate-x-full');
-            responsiveMenu.classList.remove('translate-x-0');
-            megaMenuDropdown.classList.add('hidden');
-        }
-    });
-
-    // إغلاق القائمة الفرعية
-    megaMenuDropdown.querySelector('button').addEventListener('click', () => {
-        megaMenuDropdown.classList.add('hidden');
-    });
-</script>
-
 
     <div class="container mx-auto">
         <div class="flex justify-center items-center h-screen bg-amber-100">
@@ -261,6 +337,49 @@
     <!-- استدعاء Flowbite -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 
+    <script>
+        const burgerMenuBtn = document.getElementById('burger-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const responsiveMenu = document.getElementById('responsive-menu');
+        const megaMenuDropdown = document.getElementById('mega-menu-full-dropdown');
+        const companyMenuBtnMobile = document.getElementById('company-menu-btn-mobile');
+
+        // فتح القائمة الجانبية عند الضغط على زر البرغر
+        burgerMenuBtn.addEventListener('click', () => {
+            responsiveMenu.classList.remove('translate-x-full');
+            responsiveMenu.classList.add('translate-x-0');
+        });
+
+        // إغلاق القائمة الجانبية عند الضغط على زر الإغلاق
+        closeMenuBtn.addEventListener('click', () => {
+            responsiveMenu.classList.remove('translate-x-0');
+            responsiveMenu.classList.add('translate-x-full');
+        });
+
+        // فتح وإغلاق القائمة الفرعية عند الضغط على Company
+        const toggleCompanyMenu = () => {
+            megaMenuDropdown.classList.toggle('hidden');
+        };
+
+        companyMenuBtnMobile.addEventListener('click', (event) => {
+            event.stopPropagation();
+            toggleCompanyMenu();
+        });
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', (event) => {
+            if (!responsiveMenu.contains(event.target) && !burgerMenuBtn.contains(event.target)) {
+                responsiveMenu.classList.add('translate-x-full');
+                responsiveMenu.classList.remove('translate-x-0');
+                megaMenuDropdown.classList.add('hidden');
+            }
+        });
+
+        // إغلاق القائمة الفرعية
+        megaMenuDropdown.querySelector('button').addEventListener('click', () => {
+            megaMenuDropdown.classList.add('hidden');
+        });
+    </script>
 </body>
 
 </html>
