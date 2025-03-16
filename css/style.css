@@ -330,6 +330,137 @@
 }
 
 /* e servicesCard */
+/* S scrolldown */
+.scrolldown {
+    --sizeX: 18px;
+    --sizeY: 37px;
+    position: absolute;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    border: calc(var(--sizeX) / 10) solid var(--yellow-color);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+	right: 7px;
+}
+
+.scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--yellow-color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #ce88483b;
+}
+
+@keyframes scrolldown-anim {
+	0% {
+		opacity: 0;
+		height: 6px;
+	}
+
+	40% {
+		opacity: 1;
+		height: 10px;
+	}
+
+	80% {
+		transform: translate(0, 20px);
+		height: 10px;
+		opacity: 0;
+	}
+
+	100% {
+		height: 3px;
+		opacity: 0;
+	}
+}
+
+.chevrons {
+	padding: 6px 0 0 0;
+    margin-left: 0px;
+    margin-top: 33px;
+    width: 14px;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chevrondown {
+	margin-top: -6px;
+	position: relative;
+	border: solid var(--yellow-color);
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	transform: rotate(45deg);
+}
+
+.chevrondown:nth-child(odd) {
+	animation: pulse54012 500ms ease infinite alternate;
+}
+
+.chevrondown:nth-child(even) {
+	animation: pulse54012 500ms ease infinite alternate 250ms;
+}
+
+@keyframes pulse54012 {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 0.5;
+	}
+}
+/* E scrolldown */
+/* works */
+.worksTabBtn{
+	width: 100%;
+    padding: 10px 10px;
+    /* background: var(--blue-color); */
+    color: var(--blue-color);
+    border-radius: 8px;
+    text-align: start;
+    font-size: 14px;
+    font-weight: 500;
+	transition: 0.3s;
+    margin-bottom: 5px;
+}
+.worksTabBtn[aria-selected="true"],
+.worksTabBtn:hover{
+    background: var(--blue-color);
+    color: white !important;
+}
+/* تخصيص شريط التمرير بأكمله */
+.tablist::-webkit-scrollbar {
+    width: 8px; /* عرض شريط التمرير العمودي */
+    height: 4px; /* ارتفاع شريط التمرير الأفقي */
+}
+
+/* تخصيص مسار شريط التمرير */
+.tablist::-webkit-scrollbar-track {
+    background: #f1f1f1; /* لون مسار شريط التمرير */
+}
+
+/* تخصيص مقبض شريط التمرير */
+.tablist::-webkit-scrollbar-thumb {
+    background: var(--yellow-color); /* لون مقبض شريط التمرير */
+    border-radius: 4px; /* زوايا مقبض شريط التمرير */
+}
+
+
+/*e works */
 
 @media (max-width: 480px) {
 	.mainBtn .text {
@@ -337,6 +468,10 @@
 	}
 	.serviceCard {
 		max-height: 200px;
+	}
+	.worksTabBtn {
+		padding: 6px 6px;
+		font-size: 10px;
 	}
 }
 @media (max-width: 768px) {
