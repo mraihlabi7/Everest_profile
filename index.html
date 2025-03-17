@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -25,28 +25,6 @@
         <header class="bg-blue-900 text-white py-3">
             <div class="container mx-auto flex items-center justify-between px-1">
 
-                <!-- البحث واللغة -->
-                <div class="flex items-center gap-4">
-                    <button
-                        class="px-2 py-1 rounded-full border border-gray-900 hover:bg-white hover:text-blue-900 transition">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    <!-- أيقونات السوشيال ميديا -->
-                    <div class="flex gap-3">
-                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
-                                class="fa-brands fa-square-x-twitter"></i></a>
-                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
-                                class="fa-brands fa-square-youtube"></i></a>
-                    </div>
-                </div>
-
-                <!-- رسالة -->
-                <div class="lg:mr-[-80px]">
-                    <span class="md:text-[22px] text-[14px]">نسعى دائماً لابتسامة عملائنا</span>
-                </div>
-
                 <!-- معلومات التواصل -->
                 <div class="flex items-center gap-6 text-yellow-900">
                     <div class="flex gap-2">
@@ -65,6 +43,30 @@
                     </div>
                 </div>
 
+
+
+                <!-- رسالة -->
+                <div class="lg:mr-[-80px]">
+                    <span class="md:text-[22px] text-[14px]">نسعى دائماً لابتسامة عملائنا</span>
+                </div>
+
+                <!-- البحث واللغة -->
+                <div class="flex items-center gap-4">
+                    <button
+                        class="px-2 py-1 rounded-full border border-gray-900 hover:bg-white hover:text-blue-900 transition">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <!-- أيقونات السوشيال ميديا -->
+                    <div class="flex gap-3">
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+                </div>
+
             </div>
         </header>
 
@@ -72,11 +74,20 @@
         <nav class="bg-white">
             <div class="flex  justify-between items-center p-2 relative container mx-auto px-1">
 
-                <a class="mainBtn" href="#">
-                    <span class="top-key"></span>
-                    <span class="text">تواصل واتساب</span>
-                    <span class="bottom-key-1"></span>
-                    <span class="bottom-key-2"></span>
+                <!-- زر قائمة الموبايل -->
+                <button id="burger-menu-btn" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+
+                <!-- الشعار -->
+                <a href="https://flowbite.com" class="Nav-logo ms-[-40px] md:ms-0">
+                    <img src="imgs/mainImg/mainLogo.png" class="h-full w-full" alt="Flowbite Logo" />
                 </a>
 
                 <!-- قائمة الشاشات الكبيرة -->
@@ -119,19 +130,14 @@
                     </ul>
                 </div>
 
-                <a href="https://flowbite.com" class="Nav-logo ms-[-40px] md:ms-0">
-                    <img src="imgs/mainImg/mainLogo.png" class="h-full w-full" alt="Flowbite Logo" />
-                </a>
 
-                <button id="burger-menu-btn" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
+
+                <a class="mainBtn" href="#">
+                    <span class="top-key"></span>
+                    <span class="text">تواصل واتساب</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </a>
             </div>
 
             <!-- القائمة الجانبية (تفتح من اليمين) -->
@@ -741,116 +747,170 @@
 
 
 
-            <div class="flex justify-between rtl">
-                <ul class="tablist h-[250px] overflow-auto pe-[3px] ps-[34px] relative w-[35%] lg:w-[25%] text-sm rtl"
-                        data-tabs-toggle="#default-tab-content"
-                        role="tablist">
+            <div class="worksContent flex justify-between rtl">
+                <ul class="tablist h-[150px] sm:h-[250px] lg:h-[300px] overflow-auto pe-[3px] ps-[28px] sm:ps-[34px] relative w-[45%] lg:w-[25%] text-sm rtl"
+                    data-tabs-toggle="#default-tab-content" role="tablist">
 
-                        <div class="scrolldown" style="--color: skyblue">
-                            <div class="chevrons">
-                                <div class="chevrondown"></div>
-                                <div class="chevrondown"></div>
-                            </div>
+                    <div class="scrolldown" style="--color: skyblue">
+                        <div class="chevrons">
+                            <div class="chevrondown"></div>
+                            <div class="chevrondown"></div>
                         </div>
+                    </div>
+
                     <li>
-                        <button href="#"
-                            class="worksTabBtn"
-                            aria-current="page"
-                            role="tab"
-                            aria-selected="true"
-                            data-tabs-target="#tab1"
-                            aria-controls="tab1"
-                            >
+                        <button href="#" class="worksTabBtn" aria-current="page" role="tab" aria-selected="true"
+                            data-tabs-target="#tab1" aria-controls="tab1">
                             موشن جرفيك
                         </button>
                     </li>
+
                     <li>
-                        <button href="#"
-                            class="worksTabBtn"
-                            aria-current="page"
-                            role="tab"
-                            aria-selected="false"
-                            data-tabs-target="#tab2"
-                            aria-controls="tab2"
-                            >
-                            موشن جرفيك
+                        <button href="#" class="worksTabBtn" aria-current="page" role="tab" aria-selected="false"
+                            data-tabs-target="#tab2" aria-controls="tab2">
+                            تصميم المواقع
                         </button>
                     </li>
+
                     <li>
-                        <button href="#"
-                            class="worksTabBtn"
-                            aria-current="page"
-                            role="tab"
-                            aria-selected="false"
-                            data-tabs-target="#tab2"
-                            aria-controls="tab2"
-                            >
-                            موشن جرفيك
+                        <button href="#" class="worksTabBtn" aria-current="page" role="tab" aria-selected="false"
+                            data-tabs-target="#tab3" aria-controls="tab3">
+                            كل الاعمال
                         </button>
                     </li>
-                    <li>
-                        <button href="#"
-                            class="worksTabBtn"
-                            aria-current="page"
-                            role="tab"
-                            aria-selected="false"
-                            data-tabs-target="#tab2"
-                            aria-controls="tab2"
-                            >
-                            موشن جرفيك
-                        </button>
-                    </li>
-                    <li>
-                        <button href="#"
-                            class="worksTabBtn"
-                            aria-current="page"
-                            role="tab"
-                            aria-selected="false"
-                            data-tabs-target="#tab2"
-                            aria-controls="tab2"
-                            >
-                            موشن جرفيك
-                        </button>
-                    </li>
-                    <li>
-                        <button href="#"
-                            class="worksTabBtn"
-                            aria-current="page"
-                            role="tab"
-                            aria-selected="false"
-                            data-tabs-target="#tab2"
-                            aria-controls="tab2"
-                            >
-                            موشن جرفيك
-                        </button>
-                    </li>
-                    <li>
-                        <button href="#"
-                            class="worksTabBtn"
-                            aria-current="page"
-                            role="tab"
-                            aria-selected="false"
-                            data-tabs-target="#tab2"
-                            aria-controls="tab2"
-                            >
-                            موشن جرفيك
-                        </button>
-                    </li>
+
                 </ul>
-                <div class="bg-yellow-900 h-[250px]  rounded-lg w-[60%] sm:w-[62%] lg:w-[71%]
-                    <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">Profile Tab</h3>
-                    <p class="mb-2">This is some placeholder content the Profile tab's associated content, clicking
-                        another tab will toggle the visibility of this one for the next.</p>
-                    <p>The tab JavaScript swaps classes to control the content visibility and styling.</p>
+                <div class="imgWorks bg-yellow-900 h-[150px] sm:h-[250px] lg:h-[300px]  rounded-lg w-[53%] sm:w-[62%] lg:w-[71%]">
+                    <img src="imgs/works/Rectangle 17.png" alt="Rectangle 17.png" class="w-[100%] h-[100%]">
                 </div>
             </div>
-            <div id="default-tab-content">
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="tab1" role="tabpanel" aria-labelledby="profile-tab">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+            <div id="default-tab-content" class="worksTabs mt-3">
+                
+                <div class="" id="tab1" role="tabpanel"
+                    aria-labelledby="profile-tab">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4">
+
+                        <!-- كاردات اعمالنا -->
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="tab2" role="tabpanel" aria-labelledby="profile-tab">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">This is soffffffff <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+
+
+                <div class="" id="tab2" role="tabpanel"
+                    aria-labelledby="profile-tab">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4">
+
+                        <!-- كاردات اعمالنا -->
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
+
+                <div class="" id="tab3" role="tabpanel"
+                    aria-labelledby="profile-tab">
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 md:gap-4">
+
+                        <!-- كاردات اعمالنا -->
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                        <div class="workCard h-[150px] sm:h-[200px] ">
+                            <img src="imgs/works/Group 1000009771.png" alt="" class="">
+                            <!-- <p class="card-title">Product Name</p> -->
+                            <p class="small-desc text-[12px] md:text-[15px]">
+                                نُقدم لك تصاميم حيوية وجذابة تعكس رؤية علامتك التجارية وتترك انطباعًا لا يُنسى, نحن هنا لتحويل أفكارك إلى واقع مفعم بالحيوية. 
+                            </p>
+                            <div class="go-corner">
+                                <div class="go-arrow">→</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
 
             </div>
 
