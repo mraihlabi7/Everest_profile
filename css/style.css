@@ -647,34 +647,35 @@
 	background: var(--yellow-color);
 	transform: rotate(-3deg);
 }
+.sayCard.blue{
+	box-shadow: 0 0 7px 6px #262f562c;
+}
+.sayCard.blue::before{
+	background: var(--blue-color);
+}
+.sayCard.blue .comma{
+	color: var(--blue-color);
+}
 .sayCard .imgCotainer {
-    position: absolute;
-    top: -80px;
-    right: 50%;
-    width: 80px;
-    height: 80px;
-    transform: translate(50%, 50%);
+	position: absolute;
+	top: -80px;
+	right: 50%;
+	width: 80px;
+	height: 80px;
+	transform: translate(50%, 50%);
 }
-
-/* .sayCard .heading {
-	font-size: 20px;
-	text-transform: capitalize;
-	font-weight: 700;
-}
-
-.sayCard p:not(.heading) {
-	font-size: 14px;
-}
-
-.sayCard p:last-child {
-	color: #e81cff;
-	font-weight: 600;
-} */
-
 .sayCard:hover::before {
 	transform: rotate(0) scale(1.02);
 }
+.swiper-pagination-bullet-active {
+    background: var(--yellow-color) !important;
+}
 
+@media (max-width: 600px) {
+	.whatSay .swiper-pagination {
+		top: 80%;
+	}
+}
 /* E what say */
 
 @media (max-width: 480px) {
