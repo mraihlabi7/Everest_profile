@@ -71,6 +71,9 @@
 	text-decoration: none;
 	color: var(--yellow-color);
 }
+.mainBtn.Blue .text{
+	color: var(--blue-color);
+}
 
 .mainBtn .top-key {
 	height: 2px;
@@ -100,6 +103,16 @@
 	position: absolute;
 	background: #e8e8e8;
 	transition: width 0.5s ease-out, right 0.3s ease-out;
+}
+.mainBtn.Blue{
+	border: 2px solid var(--blue-color);
+}
+.mainBtn.Blue::before{
+	background: var(--blue-color);
+}
+
+.mainBtn.Blue:hover {
+	background: var(--blue-color);
 }
 
 .mainBtn:hover {

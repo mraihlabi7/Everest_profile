@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ايفيرست</title>
+
+    <!-- استدعاء الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- استدعاء الأيقونات -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- استدعاء الاستايل -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="fixed w-full z-[50]">
+        <!-- الهيدر -->
+        <header class="bg-blue-900 text-white py-3">
+            <div class="container mx-auto flex items-center justify-between px-1">
+
+                <!-- معلومات التواصل -->
+                <div class="flex items-center gap-6 text-yellow-900">
+                    <div class="flex gap-2">
+                        <div class="flex-col items-end hidden lg:flex">
+                            <span class="text-[13px] text-white">info@sanaayaalmaarof.org</span>
+                            <span class=" text-gray-900 text-[10px]">البريد الرسمي للموسسة</span>
+                        </div>
+                        <i class="hover:text-gray-900 mt-2 fa-solid fa-at"></i>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="flex-col hidden lg:flex items-end">
+                            <span class="text-[13px] text-white">0123 567 8901</span>
+                            <span class=" text-gray-900 text-[10px]">للتواصل معنا</span>
+                        </div>
+                        <i class="hover:text-gray-900 mt-2 fa-solid fa-phone"></i>
+                    </div>
+                </div>
+
+
+
+                <!-- رسالة -->
+                <div class="lg:mr-[-80px]">
+                    <span class="md:text-[22px] text-[14px]">نسعى دائماً لابتسامة عملائنا</span>
+                </div>
+
+                <!-- البحث واللغة -->
+                <div class="flex items-center gap-4">
+                    <button
+                        class="px-2 py-1 rounded-full border border-gray-900 hover:bg-white hover:text-blue-900 transition">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <!-- أيقونات السوشيال ميديا -->
+                    <div class="flex gap-3">
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="#" class="hover:text-yellow-900 text-gray-900"><i
+                                class="fa-brands fa-square-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <!-- nav -->
+        <nav class="bg-white">
+            <div class="flex  justify-between items-center p-2 relative container mx-auto px-1">
+
+                <!-- زر قائمة الموبايل -->
+                <button id="burger-menu-btn" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+
+                <!-- الشعار -->
+                <a href="https://flowbite.com" class="Nav-logo ms-[-40px] md:ms-0">
+                    <img src="imgs/mainImg/mainLogo.png" class="h-full w-full" alt="Flowbite Logo" />
+                </a>
+
+                <!-- قائمة الشاشات الكبيرة -->
+                <div id="mega-menu-full" class="hidden md:flex md:w-auto font-medium">
+                    <ul class="flex flex-row-reverse rounded-lg">
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent  hover:text-yellow-500">الرئسية</a>
+                        </li>
+                        <li>
+                            <button id="mega-menu-full-dropdown-button"
+                                data-collapse-toggle="mega-menu-full-dropdown-larg" aria-expanded="false"
+                                class="Nav-link mt-0.5 flex hover:text-yellow-500 items-center justify-between text-blue-900">
+                                <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                                خدماتنا
+                            </button>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">المشاريع</a>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">باقة
+                                الخدمات</a></li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">الاخبار</a>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">الشراكات</a>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">العروض</a>
+                        </li>
+                        <li><a href="#"
+                                class="Nav-link text-blue-900 rounded-sm md:hover:bg-transparent hover:text-yellow-500">المدونات</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <a class="mainBtn" href="#">
+                    <span class="top-key"></span>
+                    <span class="text">تواصل واتساب</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </a>
+            </div>
+
+            <!-- القائمة الجانبية (تفتح من اليمين) -->
+            <div id="responsive-menu"
+                class="fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform translate-x-full transition-transform ease-in-out duration-300 md:hidden">
+                <button id="close-menu-btn" class="absolute top-3 left-3 text-gray-700 dark:text-white">✖</button>
+                <ul class="p-5 space-y-4">
+                    <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Home</a></li>
+                    <li>
+                        <button id="company-menu-btn-mobile"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm dark:text-white">Company
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                    </li>
+                    <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Marketplace</a></li>
+                    <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Resources</a></li>
+                    <li><a href="#" class="block text-gray-900 dark:text-white hover:text-blue-600">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- قائمة Company -->
+            <div id="mega-menu-full-dropdown"
+                class="hidden fixed right-0 top-0 h-full w-64 bg-white dark:bg-gray-900 shadow-lg transform transition-transform ease-in-out duration-300 md:hidden">
+                <div class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2">
+                    <ul>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Online Stores</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Segmentation</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Marketing CRM</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Online Stores</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Segmentation</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                        <li><a href="#" class="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+                                <div class="font-semibold">Marketing CRM</div><span
+                                    class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                    you're already using.</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <button class="absolute top-3 right-3 text-gray-700 dark:text-white">✖</button>
+            </div>
+            <div id="mega-menu-full-dropdown-larg" class=" hidden bg-blue-900 mt-1 shadow-xs">
+                <ul class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 lg:grid-cols-3 md:px-6"
+                    style="    direction: rtl;">
+                    <li>
+                        <a href="#" class="block transition-all hover:bg-yellow-900 p-3 rounded-lg text-right">
+                            <div class="font-semibold">Online Stores</div>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                you're already using.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block transition-all hover:bg-yellow-900 p-3 rounded-lg text-right">
+                            <div class="font-semibold">Online Stores</div>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                you're already using.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block transition-all hover:bg-yellow-900 p-3 rounded-lg text-right">
+                            <div class="font-semibold">Online Stores</div>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                you're already using.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block transition-all hover:bg-yellow-900 p-3 rounded-lg text-right">
+                            <div class="font-semibold">Online Stores</div>
+                            <span class="text-sm text-gray-500 dark:text-gray-400">Connect with third-party tools that
+                                you're already using.</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <!-- diviver -->
+    <div class="h-[113.5px]"></div>
+
+    <div class="headerOfPage bg-[url('./imgs/mainImg/topOfPage.png')]">
+        <div class="container mx-auto px-1 py-12">
+
+            <h2 class="mainTitle">
+                <span>انشطة الشركة </span>
+            </h2>
+
+            <p class="flex gap-2 mx-auto mt-3 text-gray-500 text-[12px] md:text-[16px]" style="width: fit-content;">
+                <span class="flex gap-3 items-center text-black font-bold"> <span>الرئسية</span><svg
+                        class="mt-1 w-4 h-4 transform rotate-180 " fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </span>
+                <span>جميع انشطة الشركة</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- s slider -->
+    <div class="container mx-auto pt-10 pb-20 px-1">
+        <!-- الكاروسيل -->
+        <div id="carouselExample" class="relative md:w-[85%] mx-auto" data-carousel="static">
+            <!-- المؤشرات (Indicators) -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-[-30px] left-1/2">
+                <button type="button" class="mx-1 w-3 h-3 rounded-full bg-blue-900" aria-current="true"
+                    aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="mx-1 w-3 h-3 rounded-full bg-blue-900" aria-current="false"
+                    aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="mx-1 w-3 h-3 rounded-full bg-blue-900" aria-current="false"
+                    aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            </div>
+
+            <!-- غلاف الكاروسيل -->
+            <div
+                class="h-[360px] sm:h-[380px] md:h-[430px] lg:h-[560px] xl:h-[650px] overflow-hidden relative rounded-lg">
+                <!-- الشريحة الأولى -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <div class="bg-white border  h-full hover:bg-gray-100 items-center p-2 rounded-lg shadow-sm w-full">
+                        <img class="w-100 rounded-md" src="imgs/activities/Rectangle1.png" alt="">
+                        <div class="flex flex-col justify-between p-4 leading-normal">
+                            <h5 class="font-bold mb-2 md:text-[20px] text-[16px] text-blue-900">Noteworthy
+                                technology acquisitions 2021</h5>
+                            <p class="mb-5 md:text-[16px] text-[12px] text-gray-500">Here are the biggest enterprise
+                                technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                            <a class="mainBtn mx-auto" href="#" style="width: fit-content;">
+                                <span class="top-key"></span>
+                                <span class="text">استكشف</span>
+                                <span class="bottom-key-1"></span>
+                                <span class="bottom-key-2"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- الشريحة الثانية -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="image2.jpg" class="absolute block w-full h-full object-cover" alt="Slide 2">
+                </div>
+                <!-- الشريحة الثالثة -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="image3.jpg" class="absolute block w-full h-full object-cover" alt="Slide 3">
+                </div>
+            </div>
+
+            <!-- أزرار التنقل -->
+            <button type="button"
+                class="absolute top-0 left-[-60px] z-30 md:flex hidden items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-20 rounded-md bg-blue-900 hover:bg-yellow-900 transition-all">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                    <span class="sr-only">السابق</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 right-[-60px] z-30 md:flex hidden items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-20 rounded-md bg-blue-900 hover:bg-yellow-900 transition-all">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                    <span class="sr-only">التالي</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <!-- e slider -->
+
+    <!-- News Grid -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex  mb-8">
+            <h2 class="text-lg md:text-xl lg:text-2xl font-bold text-[#1e4d82] border-r-4 border-[#ce8848] pr-3">
+                أنشطة الشركة
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-4 lg:gap-6 mb-12">
+            <!-- s card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md  transition-all">
+                <img src="imgs/activities/Rectangle 18 (1).jpg" alt="Swimming" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">صنائع المعروف تستقبل وفد جمعية العون
+                        المباشر لتعزيز</h3>
+                    <div class="flex justify-end text-gray-500 text-sm">
+                        <span><span> <i class="fa-solid fa-calendar-days"></i></span> January 23, 2024</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- e card -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                <img src="imgs/activities/Rectangle 18 (2).jpg" alt="News" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">News Title Lorem Ipsum Dolor Sit Amet
+                    </h3>
+                    <div class="flex justify-between text-gray-500 text-sm">
+                        <span>1 Hour Ago</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- s card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md  transition-all">
+                <img src="imgs/activities/Rectangle 18 (1).jpg" alt="Swimming" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">صنائع المعروف تستقبل وفد جمعية العون
+                        المباشر لتعزيز</h3>
+                    <div class="flex justify-end text-gray-500 text-sm">
+                        <span>January 23, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <!-- e card -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                <img src="imgs/activities/Rectangle 18 (2).jpg" alt="News" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">News Title Lorem Ipsum Dolor Sit Amet
+                    </h3>
+                    <div class="flex justify-between text-gray-500 text-sm">
+                        <span>1 Hour Ago</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- s card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md  transition-all">
+                <img src="imgs/activities/Rectangle 18 (1).jpg" alt="Swimming" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">صنائع المعروف تستقبل وفد جمعية العون
+                        المباشر لتعزيز</h3>
+                    <div class="flex justify-end text-gray-500 text-sm">
+                        <span>January 23, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <!-- e card -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                <img src="imgs/activities/Rectangle 18 (2).jpg" alt="News" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">News Title Lorem Ipsum Dolor Sit Amet
+                    </h3>
+                    <div class="flex justify-between text-gray-500 text-sm">
+                        <span>1 Hour Ago</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- s card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md  transition-all">
+                <img src="imgs/activities/Rectangle 18 (1).jpg" alt="Swimming" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">صنائع المعروف تستقبل وفد جمعية العون
+                        المباشر لتعزيز</h3>
+                    <div class="flex justify-end text-gray-500 text-sm">
+                        <span>January 23, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <!-- e card -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                <img src="imgs/activities/Rectangle 18 (2).jpg" alt="News" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">News Title Lorem Ipsum Dolor Sit Amet
+                    </h3>
+                    <div class="flex justify-between text-gray-500 text-sm">
+                        <span>1 Hour Ago</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- s card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md  transition-all">
+                <img src="imgs/activities/Rectangle 18 (1).jpg" alt="Swimming" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">صنائع المعروف تستقبل وفد جمعية العون
+                        المباشر لتعزيز</h3>
+                    <div class="flex justify-end text-gray-500 text-sm">
+                        <span>January 23, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <!-- e card -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                <img src="imgs/activities/Rectangle 18 (2).jpg" alt="News" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">News Title Lorem Ipsum Dolor Sit Amet
+                    </h3>
+                    <div class="flex justify-between text-gray-500 text-sm">
+                        <span>1 Hour Ago</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- s card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md  transition-all">
+                <img src="imgs/activities/Rectangle 18 (1).jpg" alt="Swimming" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">صنائع المعروف تستقبل وفد جمعية العون
+                        المباشر لتعزيز</h3>
+                    <div class="flex justify-end text-gray-500 text-sm">
+                        <span>January 23, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <!-- e card -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                <img src="imgs/activities/Rectangle 18 (2).jpg" alt="News" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">News Title Lorem Ipsum Dolor Sit Amet
+                    </h3>
+                    <div class="flex justify-between text-gray-500 text-sm">
+                        <span>1 Hour Ago</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- s card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md  transition-all">
+                <img src="imgs/activities/Rectangle 18 (1).jpg" alt="Swimming" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">صنائع المعروف تستقبل وفد جمعية العون
+                        المباشر لتعزيز</h3>
+                    <div class="flex justify-end text-gray-500 text-sm">
+                        <span>January 23, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <!-- e card -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                <img src="imgs/activities/Rectangle 18 (2).jpg" alt="News" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">News Title Lorem Ipsum Dolor Sit Amet
+                    </h3>
+                    <div class="flex justify-between text-gray-500 text-sm">
+                        <span>1 Hour Ago</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+            <!-- s card -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md  transition-all">
+                <img src="imgs/activities/Rectangle 18 (1).jpg" alt="Swimming" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">صنائع المعروف تستقبل وفد جمعية العون
+                        المباشر لتعزيز</h3>
+                    <div class="flex justify-end text-gray-500 text-sm">
+                        <span>January 23, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <!-- e card -->
+
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all">
+                <img src="imgs/activities/Rectangle 18 (2).jpg" alt="News" class="w-full h-48 object-cover">
+                <div class="p-2">
+                    <h3 class="text-sm md:text-md lg:text-gl font-semibold mb-2">News Title Lorem Ipsum Dolor Sit Amet
+                    </h3>
+                    <div class="flex justify-between text-gray-500 text-sm">
+                        <span>1 Hour Ago</span>
+                        <span>CNN Indonesia</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <a class="mainBtn Blue mx-auto block mx-[auto]" href="#" style="width: fit-content;">
+            <span class="top-key"></span>
+            <span class="text">تحميل المزيد</span>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+        </a>
+    </main>
+
+    <!-- القسم العلوي -->
+    <div class="subscrip">
+        <div class="bg-[#1d2746] ">
+            <div class="container mx-auto px-1">
+                <div class="text-white flex md:justify-between items-center justify-center">
+                    <div class="text-center md:text-right p-6 md:p-0">
+                        <h2 class="text-[15px] md:text-3xl mb-2">جاهز لتجربة عمل مختلفة؟</h2>
+                        <p class="text-[11px] md:text-[15px] mb-5">احصل على أفضل تجربة عمل لم تشعر بها من قبل</p>
+                        <a class="mainBtn" href="#">
+                            <span class="top-key"></span>
+                            <span class="text">اشترك الان</span>
+                            <span class="bottom-key-1"></span>
+                            <span class="bottom-key-2"></span>
+                        </a>
+                    </div>
+                    <div
+                        class="imgcontainer bg-[url('imgs/mainImg/Pattern.png')] bg-contain w-[70px] h-[100px] md:w-[200px] md:h-[250px] lg:w-[250px] lg:h-[300px] hidden md:block">
+                        <img src="imgs/mainImg/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-2379004 1.png"
+                            alt="صورة شخص" class="w-[100%] h-[100%]">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- الفوتر -->
+    <footer class=" py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  lg:gap-10">
+                <!-- Column 1: Logo and Social Media -->
+                <div class="text-right">
+                    <img src="imgs/mainImg/mainLogo.png" alt="Everest Logo" class="h-12 mb-6">
+                    <p class="text-blue-900 mb-8 leading-relaxed">
+                        نقدم لكم مساحات مريحة، مقهى دافئ، إنترنت عالي السرعة، مواقف سيارات واسعة والمزيد لأفضل مساحات
+                        العمل واللقاءات
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-blue-900 hover:text-yellow-900 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-900 hover:text-yellow-900 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-900 hover:text-yellow-900 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2a10 10 0 100 20 10 10 0 000-20z"></path>
+                                <path d="M8 12a4 4 0 118 0 4 4 0 01-8 0z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-blue-900 hover:text-yellow-900 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z">
+                                </path>
+                                <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Contact Information -->
+                <div class="text-right">
+                    <h2 class="mainTitle m-0 mb-5">
+                        <span>العنوان</span>
+                    </h2>
+                    <div class="space-y-1">
+                        <p class="text-blue-900">الجمهورية اليمنية</p>
+                        <p class="text-blue-900">محافظة حضرموت / مدينة المكلا</p>
+                        <p class="text-blue-900">فوه - خلف جامعة حضرموت - زروة</p>
+                        <p class="text-blue-900">المهندسين</p>
+                        <div class="flex items-center gap-2 text-blue-900 hover:text-yellow-900 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                                </path>
+                            </svg>
+                            <span dir="ltr">+967 736915147</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-blue-900 hover:text-yellow-900 transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            <span>info@website.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Links -->
+                <div class="text-right col-span-2">
+                    <h2 class="mainTitle m-0 mb-5">
+                        <span>الفروع و الوكلاء</span>
+                    </h2>
+                    <div class="grid grid-cols-2 ">
+
+                        <ul class="space-y-1">
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>العاصمة المؤقتة عدن</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>محافظة تعز</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>محافظة شبوة</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>محافظة أبين</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>محافظة مأرب</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul class="space-y-1">
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>محافظة المهرة</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>محافظة حضرموت - سيئون</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>محافظة المكلا</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-blue-900 hover:text-yellow-900 flex items-center  gap-2 hover:ps-2 transition">
+                                    <svg class="w-4 h-4 transform rotate-180 text-yellow-900" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                    <span>محافظة لحج</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    <!-- Bottom Footer -->
+    <div class="mt-8 py-5 border-t border-gray-700 bg-blue-900">
+        <div class="container mx-auto px-1">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-400 text-sm">
+                    © Yoursitename 2024 | All Rights Reserved
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms & Condition</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- fontawsem -->
+    <script src="js/all.min.js"></script>
+    <!-- استدعاء Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/themeTailwindColor.js"></script>
+    <!-- مكتبة الكورسل -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- استدعاء Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+
+    <!-- خاص بسلايدر ماذا قالوا -->
+    <script>
+        var swiper = new Swiper(".centered-slide-carousel", {
+            centeredSlides: true,
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 'auto',
+
+            // إعدادات التنعديل الصحيحة
+            navigation: {
+                nextEl: ".custom-next",
+                prevEl: ".custom-prev",
+            },
+
+            // إعدادات الترقيم
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            // إعدادات الاستجابة
+            breakpoints: {
+                1920: { slidesPerView: 4 },
+                1028: { slidesPerView: 3 },
+                // 768: { slidesPerView: 2 },
+                600: { slidesPerView: 2 }
+            }
+        });
+
+        // partner slider
+        var swiper = new Swiper(".partner-slide-carousel", {
+            centeredSlides: true,
+            loop: true,
+            spaceBetween: 30,
+            slidesPerView: 'auto',
+
+            // إعدادات التنعديل الصحيحة
+            navigation: {
+                nextEl: ".custom-next",
+                prevEl: ".custom-prev",
+            },
+
+            // إعدادات الترقيم
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            // إعدادات الاستجابة
+            breakpoints: {
+                1920: { slidesPerView: 6 },
+                1028: { slidesPerView: 5 },
+                // 768: { slidesPerView: 2 },
+                600: { slidesPerView: 3 },
+                400: { slidesPerView: 2 },
+            }
+        });
+    </script>
+    <script>
+        const burgerMenuBtn = document.getElementById('burger-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const responsiveMenu = document.getElementById('responsive-menu');
+        const megaMenuDropdown = document.getElementById('mega-menu-full-dropdown');
+        const companyMenuBtnMobile = document.getElementById('company-menu-btn-mobile');
+
+        // فتح القائمة الجانبية عند الضغط على زر البرغر
+        burgerMenuBtn.addEventListener('click', () => {
+            responsiveMenu.classList.remove('translate-x-full');
+            responsiveMenu.classList.add('translate-x-0');
+        });
+
+        // إغلاق القائمة الجانبية عند الضغط على زر الإغلاق
+        closeMenuBtn.addEventListener('click', () => {
+            responsiveMenu.classList.remove('translate-x-0');
+            responsiveMenu.classList.add('translate-x-full');
+        });
+
+        // فتح وإغلاق القائمة الفرعية عند الضغط على Company
+        const toggleCompanyMenu = () => {
+            megaMenuDropdown.classList.toggle('hidden');
+        };
+
+        companyMenuBtnMobile.addEventListener('click', (event) => {
+            event.stopPropagation();
+            toggleCompanyMenu();
+        });
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener('click', (event) => {
+            if (!responsiveMenu.contains(event.target) && !burgerMenuBtn.contains(event.target)) {
+                responsiveMenu.classList.add('translate-x-full');
+                responsiveMenu.classList.remove('translate-x-0');
+                megaMenuDropdown.classList.add('hidden');
+            }
+        });
+
+        // إغلاق القائمة الفرعية
+        megaMenuDropdown.querySelector('button').addEventListener('click', () => {
+            megaMenuDropdown.classList.add('hidden');
+        });
+    </script>
+</body>
+
+</html>
